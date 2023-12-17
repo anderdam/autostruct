@@ -1,0 +1,44 @@
+{
+  "project_name": {
+    "project": [
+      "extractions.py",
+      "transformations.py",
+      "process.py",
+      "datasets.py",
+      "__init__.py"
+    ],
+    "docs": [
+        "commands.rst",
+        "conf.py",
+        "index,rst"
+    ],
+    "models": [
+      "__init__.py",
+      "predict_model.py",
+      "train_model.py"
+    ],
+    "root_files": [
+      "__init__.py",
+      ".gitignore",
+      ".env",
+      "LICENSE",
+      "Makefile",
+      "make.bat",
+      "README.md",
+      "requirements.txt",
+      "setup.py",
+      ".pre-commit-config.yaml"
+      ],
+    "project_info": "project_name",
+    "repo_name": "repo_name",
+    "repo_url": "repo_url",
+    "author_name": "Anderson Damasceno",
+    "author_email": "anderdam@gmail.com",
+    "description": "A short description of the project.",
+    "open_source_license": [
+      "MIT",
+      "BSD-3-Clause",
+      "No license file"
+    ]
+  }
+}
