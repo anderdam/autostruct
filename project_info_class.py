@@ -1,26 +1,36 @@
 class ProjectInfo:
     def __init__(
-        self, project_name, repo_name, author_name, description, open_source_license
+        self, project_name, repo_name, scope, author_name, description, open_source_license
     ):
         self._project_name = project_name
+        self._scope = scope
         self._repo_name = repo_name
         self._author_name = author_name
         self._description = description
         self._open_source_license = open_source_license
 
-    def get_project_name(self):
+    @property
+    def project_name(self):
         return self._project_name
 
-    def get_repo_name(self):
+    @property
+    def scope(self):
+        return self._scope
+
+    @property
+    def repo_name(self):
         return self._repo_name
 
-    def get_author_name(self):
+    @property
+    def author_name(self):
         return self._author_name
 
-    def get_description(self):
+    @property
+    def description(self):
         return self._description
 
-    def get_open_source_license(self):
+    @property
+    def open_source_license(self):
         return self._open_source_license
 
     def _set_project_name(self, project_name):
@@ -39,10 +49,17 @@ class ProjectInfo:
         self._open_source_license = open_source_license
 
     def __str__(self):
-        return "Project name: {}\nRepository name: {}\nAuthor name: {}\nDescription: {}\nOpen source license: {}".format(
-            self._project_name,
-            self._repo_name,
-            self._author_name,
-            self._description,
-            self._open_source_license,
-        )
+        return "Project name: {}\n" \
+               "Scope: {}\n" \
+               "Repository name: {}\n" \
+               "Author name: {}\n" \
+               "Description: {}\n" \
+               "Open source license: {}"\
+            .format(
+                self._project_name,
+                self._scope,
+                self._repo_name,
+                self._author_name,
+                self._description,
+                self._open_source_license,
+                )
